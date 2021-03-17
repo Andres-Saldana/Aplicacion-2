@@ -41,8 +41,8 @@ def move():
         snake.pop(0)
 
     clear()
-    colores=['black','green','red','blue']
-    r_colorBody=random.choice(colores)
+    colores=['black','green','red','blue']#lista de colores
+    r_colorBody=random.choice(colores) #variables que elije al azar un color de la lista
     r_colorComida=random.choice(colores)
     for body in snake:
         square(body.x, body.y, 9, r_colorBody)
