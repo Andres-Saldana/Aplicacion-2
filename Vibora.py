@@ -11,6 +11,8 @@ def change(x, y):
     aim.x = x
     aim.y = y
     
+    # con estas dos lineas podemos hacer que la comida cambie de lugar cada vez que
+    #se presiona una tecla a un lugar aletorio
     food.x = randrange(-15, 15) * 1
     food.y = randrange(-15, 15) * 1
 
