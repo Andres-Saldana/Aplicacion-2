@@ -1,3 +1,4 @@
+import random 
 from turtle import *
 from random import randrange
 from freegames import square, vector
@@ -40,11 +41,13 @@ def move():
         snake.pop(0)
 
     clear()
-
+    colores=['black','green','red','blue']
+    r_colorBody=random.choice(colores)
+    r_colorComida=random.choice(colores)
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, r_colorBody)
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, r_colorComida)
     update()
     ontimer(move, 100)
 
